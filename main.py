@@ -1,21 +1,3 @@
-"""
-Aerostar Launch demo
-  This simple demo reads data coming from the Future Engineers TechRise web-based
-    simulator.
-  It is designed to run on a Metro M4 Express and uses the on-board Neopixel.
-  The demo runs a simple update loop, and does three actions:
-    1 - Keeps track of the number of telemetry packets received*
-    2 - Monitors flight status and prints a message each time it changes
-    3 - Prints out every 1000th telemetry packet
-        * Note: Data is sent by the Aerostar flight computer at 10Hz,
-        which is to say: ten packets of data per second.
-  Important note: If the web simulator is run faster than 10x speed, data will
-    not be sent to the microcontroller, as this would flood the USB connection.
-
-Written by Mark DeLoura and Arnie Martin for Future Engineers
-Last Updated: 12/12/2022
-"""
-
 # Import required modules and libraries
 import board
 import neopixel
